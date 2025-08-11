@@ -63,8 +63,8 @@ public class CreateCampaignWithMandatoryFieldsTest {
 		driver.findElement(By.xpath("//span[text()='Create Campaign']")).click();
 		Thread.sleep(3000);
 		
-		////create campaign with mandatory fields
-		//driver.findElement(By.xpath("//span[text()= 'Create Campaign']")).click();
+		//create campaign with mandatory fields
+
 		driver.findElement(By.name("campaignName")).sendKeys(campaignName);
 		WebElement targSize = driver.findElement(By.name("targetSize"));
 		targSize.clear();

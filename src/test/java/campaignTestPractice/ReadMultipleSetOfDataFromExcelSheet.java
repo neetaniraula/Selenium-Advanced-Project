@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.usermodel.Sheet;
+
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
@@ -16,7 +16,7 @@ public class ReadMultipleSetOfDataFromExcelSheet {
 		FileInputStream fs = new FileInputStream("./resources/testdataLoop.xlsx");
 		
 		Workbook wb = WorkbookFactory.create(fs);
-		//Sheet sheet = wb.getSheet("Campaigns");
+		
 		
 		int lastRowNumber = wb.getSheet("Campaigns").getLastRowNum();
 		
